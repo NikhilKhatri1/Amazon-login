@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign In</title>
+    <link rel="shortcut icon" href="public/images/favicon-amazon.ico">
+    <style>
+        .signin {
+            display: flex;
+            flex-direction: column;
+            /* Stack children vertically */
+            justify-content: center;
+            /* Center vertically */
+            align-items: center;
+            /* Center horizontally */
+        }
+
+        .signin-box {
+            border: 1px solid rgb(218, 212, 212);
+            padding: 20px;
+            height: 326px;
+            width: 326px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            ;
+        }
+
+        .email {
+            border: 1px solid rgba(128, 128, 128, 0.699);
+            width: 325px;
+            height: 30px;
+            border-radius: 4px;
+
+        }
+
+        .l1 {
+            padding-bottom: 20px;
+        }
+
+        .btn-continue {
+            border: 1px solid rgba(255, 196, 0, 0.904);
+            width: 325px;
+            height: 25px;
+            border-radius: 7px;
+            padding-top: 10px;
+            margin-top: 15px;
+            background-color: rgba(255, 196, 0, 0.904);
+            display: flex;
+            justify-content: center;
+        }
+
+        .need-help {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .lower-part {
+            border: 1px solid lightgray;
+            width: 325px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .l3 {
+            margin-bottom: 5px;
+        }
+
+        fieldset {
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            margin-top: 20px;
+            color: gray;
+            /* display: block;
+            width: 325px; */
+        }
+
+        .btn-create {
+            border: 1px solid lightgray;
+            border-radius: 6px;
+            box-shadow: 1px 1px 1px white;
+            margin-top: 10px;
+            display: block;
+            width: 330px;
+            height: 30px;
+            align-items: center;
+            align-content: center;
+            color: black;
+        }
+
+        footer {
+            width: 80%;
+            margin-left: 120px;
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid gray;
+            margin-top: 30px;
+        }
+
+        footer div {
+            margin-top: 20px;
+        }
+
+        footer div a {
+            font-size: 13px;
+            margin-left: 20px;
+            text-decoration: none;
+            font-family: arial;
+            font-weight: bold;
+
+        }
+
+        footer div a:hover {
+            color: rgb(238, 157, 6);
+            text-decoration: underline;
+        }
+
+        .btn-continue:hover {
+            background-color: rgb(238, 157, 6);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="signin">
+        <div class="image">
+            <img src="./images/amazon-symbol.jpg" alt="amazon-symbol">
+        </div>
+        <div class="signin-box" align="justify">
+            <span class="l1">
+                <font face="arial" size="6 ">Sign in</font>
+            </span>
+            <span class="l2">
+                <font face="arial" size="2"><b>Email or mobile phone number</b></font>
+            </span>
+            <span class="email"></span>
+            <span class="btn-continue">
+                <font face="arial" size="2"><b>Continue</b></font>
+            </span>
+            <span style="margin-top: 10px;">
+                <font face="arial" size="2">By continuing, you agree to Amazon's <font
+                        style="color: rgb(12, 114, 247);">Conditions of Use
+                    </font> and <font style="color: rgb(12, 114, 247);">Privacy Notice</font>.
+                </font>
+            </span>
+            <span class="need-help">
+                <details style="color: rgb(12, 114, 247);font-family: arial; font-size: 12px;">
+                    <summary><b>Need-help?</b></summary>
+                    <p style="padding-left: 11px;"><b>Forgot Password</b></p>
+                    <p style="padding-left: 11px;"><b>Other issues with Sign-In</b></p>
+                </details>
+            </span>
+            <span class="lower-part"></span>
+            <span class="l3">
+                <font face="arial" size="2"><b>Buying for work?</b></font>
+            </span>
+            <span>
+                <font face="arial" size="2" style="color: rgb(12, 114, 247);">Shop on Amazon Business</font>
+            </span>
+        </div>
+        <div class="lower-box">
+            <span>
+                <fieldset align="center">
+                    <legend>
+                        <font face="arial" size="2" color="gray">New to amazon?</font>
+                    </legend>
+                    <span class="btn-create"> Create your Amazon Account</span>
+                </fieldset>
+            </span>
+        </div>
+
+
+    </div>
+    <footer>
+        <div>
+            <a href="">conditions of Use</a><a href="">Privacy notice</a><a href="">help</a>
+        </div>
+    </footer>
+</body>
+
+</html>
